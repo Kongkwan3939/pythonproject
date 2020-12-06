@@ -237,6 +237,37 @@ color: rgb(255, 207, 251);
     <string>CONTACT US</string>
    </property>
   </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>330</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+border-style: solid;
+color: rgb(255, 255, 255);
+font: 20pt &quot;Elephant&quot;;
+background-color: rgb(6, 74, 147);
+
+}
+QPushButton:hover{
+	background-color: rgb(170, 255, 255);
+	color: rgb(0, 0, 127);
+}
+
+QPushButton:pressed{
+color: rgb(255, 255, 255);
+background-color: rgb(0, 0, 127);
+}</string>
+   </property>
+   <property name="text">
+    <string>FINISH</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections/>
