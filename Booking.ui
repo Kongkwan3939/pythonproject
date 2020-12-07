@@ -48,7 +48,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit">
+  <widget class="QTextEdit" name="name">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -58,7 +58,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_2">
+  <widget class="QTextEdit" name="email">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -68,7 +68,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_3">
+  <widget class="QTextEdit" name="tel">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -78,7 +78,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_4">
+  <widget class="QTextEdit" name="guest">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -88,7 +88,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QTextEdit" name="textEdit_5">
+  <widget class="QTextEdit" name="date">
    <property name="geometry">
     <rect>
      <x>220</x>
@@ -98,7 +98,7 @@
     </rect>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="backbooking">
    <property name="geometry">
     <rect>
      <x>260</x>

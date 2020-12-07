@@ -48,7 +48,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="backspecial">
    <property name="geometry">
     <rect>
      <x>180</x>

@@ -48,7 +48,7 @@
     <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="finish2">
    <property name="geometry">
     <rect>
      <x>360</x>
@@ -79,7 +79,7 @@ background-color: rgb(0, 0, 127);
     <string>FINISH</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="backpaying">
    <property name="geometry">
     <rect>
      <x>10</x>

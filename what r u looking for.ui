@@ -56,7 +56,7 @@
      <normaloff>../—Pngtree—summer midsummer beer celebrate_3779777.png</normaloff>../—Pngtree—summer midsummer beer celebrate_3779777.png</iconset>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="booking">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -86,12 +86,12 @@ color: rgb(255, 207, 251);
     <string>BOOKING</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_3">
+  <widget class="QPushButton" name="menunorder">
    <property name="geometry">
     <rect>
-     <x>60</x>
+     <x>30</x>
      <y>190</y>
-     <width>131</width>
+     <width>191</width>
      <height>41</height>
     </rect>
    </property>
@@ -113,10 +113,10 @@ color: rgb(255, 207, 251);
 }</string>
    </property>
    <property name="text">
-    <string>MENU</string>
+    <string>MENU n ORDER</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_4">
+  <widget class="QPushButton" name="paying">
    <property name="geometry">
     <rect>
      <x>270</x>
@@ -147,7 +147,7 @@ color: rgb(255, 207, 251);
     <string>PAYING</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="specialevent">
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -177,7 +177,7 @@ color: rgb(255, 207, 251);
     <string> SPECIAL EVENT</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_5">
+  <widget class="QPushButton" name="map">
    <property name="geometry">
     <rect>
      <x>60</x>
@@ -207,7 +207,7 @@ color: rgb(255, 207, 251);
     <string>MAP</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_6">
+  <widget class="QPushButton" name="contactus">
    <property name="geometry">
     <rect>
      <x>250</x>
@@ -237,7 +237,7 @@ color: rgb(255, 207, 251);
     <string>CONTACT US</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_7">
+  <widget class="QPushButton" name="finish1">
    <property name="geometry">
     <rect>
      <x>170</x>
