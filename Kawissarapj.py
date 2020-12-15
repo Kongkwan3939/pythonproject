@@ -9,11 +9,13 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-
+from PyQt5.QtWidgets import QMessageBox
 
 class Ui_Form(object):
+###create global
     global basket
     basket = 0
+    
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.resize(502, 501)
@@ -743,6 +745,7 @@ class Ui_Form(object):
         self.minus5.clicked.connect(self.m5)
         self.minus6.clicked.connect(self.m6)
         self.map.clicked.connect(self.web)
+        self.summit.clicked.connect(self.show_popup)
         self._as_counter=0
         self._bm_counter=0
         self._b52_counter=0
@@ -780,16 +783,17 @@ class Ui_Form(object):
     def sp5(self):
         self.stackedWidget.setCurrentIndex(0)
 
-##booking
+##booking Ref Stack Overflow Using PyQt5 for smtp module on python
     def mail(self):
-        y = self.name.toPlainText()
         x = self.email.toPlainText()
+        n = self.guest.toPlainText()
+        y = self.name.toPlainText()
         z = self.date.toPlainText()
         #send email.
         import smtplib
         email = '63011170@kmitl.ac.th' # My email, you have to set less secure on your gmail first
         password = 'Kongkwan3939' # My password
-        message = 'Dear '+y+'''\nDont forget your booking at Drink or Drunk Bar on '''+z+'''!.\n Thank you for choosing us^^.\nWe hope to see you again''' # The message in the email
+        message = 'Dear '+y+'''\nDont forget your booking at Drink or Drunk Bar for '''+n+''' guest(s) on '''+z+''' !\n Thankyou for choosing us^^.\n'We hope to see you again''' # The message in the email
         server = smtplib.SMTP('smtp.gmail.com', 587) # Connect to the server
         server.starttls() # Use TLS
         server.login(email, password) # Login to the email server
@@ -869,13 +873,19 @@ class Ui_Form(object):
         self.regen.setText("REGENCY "+str(self._regen_counter))
         global basket
         basket = basket - 495
-        self.showtotal.setText(str(basket)+" THB.")
+        self.showtotal.setText(str(basket)+" THB.") 
 
 ###map
     def web(self):
         import webbrowser
         webbrowser.open("https://www.google.com/maps?safe=strict&q=kmitl&gs_lcp=CgZwc3ktYWIQARgAMgUILhCTAjICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyCAgAEMcBEK8BMggIABDHARCvAToICAAQsQMQgwE6BQguELEDOgsIABCxAxDHARCjAjoICC4QsQMQgwE6DggAELEDEIMBEMcBEKMCOggIABDHARCjAjoICC4QsQMQkwI6BQgAELEDOgsIABCxAxDHARCvAVCnsgdYx7cHYMS8CWgAcAB4AYAB5wKIAawIkgEHMC4zLjAuMpgBAKABAaoBB2d3cy13aXo&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjQ96S2xsbtAhXY73MBHUQcCWoQ_AUoAXoECAoQAw")
-
+###showpopup
+    def show_popup(self):
+        msg= QMessageBox()
+        msg.setWindowTitle("YOUR RESERVATION :) ")
+        msg.setText("You have alredy made a reservation🎉. 💌Please check your email!. 🎄 Enjoy your day.🎅🏻")
+        k = msg.exec_()
+        
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "DRINK OR DRUNK"))
